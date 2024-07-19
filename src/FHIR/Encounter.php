@@ -54,6 +54,11 @@ class Encounter extends OAuth2Client
         $this->encounter['statusHistory'][] = $statusHistory_arrived;
     }
 
+    public function setId($id)
+    {
+        $this->encounter['id'] = $id;
+    }
+
     public function setInProgress($timestamp_start, $timestamp_end)
     {
 
